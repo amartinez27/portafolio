@@ -27,7 +27,7 @@ export class InfoPaginaService {
       //cambiar variables
       this.cargada = true;
       this.info = resp;
-      console.log(this.info);
+     // console.log(this.info);
     });
   } 
 
@@ -39,7 +39,7 @@ export class InfoPaginaService {
       //almacenar datos
       this.cargada = true;
       this.equipo = resp;
-      console.log(resp);
+     // console.log(resp);
     });
   }
 }

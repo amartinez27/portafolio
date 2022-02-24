@@ -4073,3 +4073,12 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+/* svg loading */
+/*
+  Color del Loading
+*/
+svg path,
+svg rect{
+  fill: black;
+}
