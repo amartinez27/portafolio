@@ -10,7 +10,7 @@ export class InfoPaginaService {
 
   //definir interfaz
   info:infoPagina={};
-  equipo:infoEquipo={};
+  equipo:infoEquipo[]=[];
   cargada= false;
   constructor(private http:HttpClient) { 
     //console.log('servicio de infopagina cargado');
@@ -33,8 +33,8 @@ export class InfoPaginaService {
 
   private cargarEquipo(){
     //leer el archivo JSON
-    this.http.get('https://angular-html-3fc44-default-rtdb.firebaseio.com/equipo.json')
-    .subscribe((resp:infoEquipo) =>{
+    this.http.get<infoEquipo[]>('https://angular-html-3fc44-default-rtdb.firebaseio.com/equipo.json')
+    .subscribe((resp:infoEquipo[]) =>{
 
       //almacenar datos
       this.cargada = true;
