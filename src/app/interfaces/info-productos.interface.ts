@@ -1,7 +1,7 @@
 
-export interface infoProductos{
-    categoria?:string;
-    cod?:string;
-    titulo?:string;
-    url?:string;
+export interface InfoProductos{
+    categoria:string;
+    cod:string;
+    titulo:string;
+    url:string;
 }
